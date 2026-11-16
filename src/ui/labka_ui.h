@@ -24,14 +24,17 @@
 // ==========================================
 class NetworkMap : public QWidget {
     Q_OBJECT
+
   public:
     NetworkMap(QWidget* parent = nullptr);
     void updateNetwork(const std::string& my_ip, const std::string& my_hostname, const std::vector<PeerInfo>& peers, LabkaCore* core);
   signals:
     void nodeClicked(const QString& ip, bool is_device);
+
   protected:
     void paintEvent(QPaintEvent* event) override;
     void mousePressEvent(QMouseEvent* event) override;
+
   private:
     std::string my_ip_;
     std::string my_hostname_;
