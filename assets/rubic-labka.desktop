@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Rubic Labka
+Comment=SSH & SFTP Manager by Wallace Corp
+Exec=rubic-labka
+Icon=rubic-labka
+Terminal=false
+Type=Application
+Categories=Network;Utility;
